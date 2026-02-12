@@ -1,0 +1,133 @@
+Linkcode Technologies is an IT training and placement institute based in Pune, India.
+The founder and CEO of Linkcode Technologies is Rahul Ahire, a Microsoft and SUN certified trainer with over 15 years of experience.
+The director of Linkcode Technologies is Pritam Kamble.
+The institute’s mission is to become Pune’s #1 training institute by shaping careers and bridging the gap between talent and opportunity.
+Linkcode Technologies offers 100% placement support to all students.
+Placement support includes mock interviews, resume building, and coding assessment practice.
+The institute provides hands-on project training for all technical courses.
+Students at Linkcode Technologies get the opportunity to work on real client internships.
+The institute provides soft skills and communication training.
+All trainers at Linkcode have 3 to 10+ years of industry experience.
+Linkcode offers Java Full-Stack Development training.
+Linkcode offers Python Full-Stack Development training.
+Linkcode offers MEAN and MERN Stack Development training.
+Linkcode provides Android Development training.
+DevOps training with CI/CD, Docker, and Kubernetes is available at Linkcode.
+Linkcode offers AWS Cloud Infrastructure training.
+Big Data Hadoop training is provided as a specialized course.
+Blockchain Expert training is offered at Linkcode.
+Data Structures and Algorithms (DSA) training is part of the curriculum.
+Linkcode offers Data Analytics training programs.
+Linkcode offers Data Science training with practical tools.
+Linkcode provides Generative AI (Gen AI) and LLM-based training.
+Digital Marketing is also one of the courses offered by Linkcode.
+Linkcode’s technical program starts with an introduction to SDLC and Agile methodologies.
+The training includes programming fundamentals using C, C++, Java, and Python.
+Students learn data structures such as arrays, linked lists, stacks, queues, and trees.
+Algorithms like sorting and searching are covered in the curriculum.
+Advanced Java with SQL is included in the training modules.
+Python with NumPy and Pandas is part of the program.
+HTML, CSS, and JavaScript fundamentals are taught for front-end development.
+The training includes database management with MySQL, PostgreSQL, and MongoDB.
+Back-end development covers Node.js and Express.
+Optional mobile development training includes Flutter, Ionic, and React Native.
+Cloud fundamentals include AWS EC2, S3, and related services.
+Students learn DevOps tools like Jenkins, Docker, and Kubernetes.
+The training covers Agile, Scrum, Jira, Postman, Git, and GitHub.
+AI modules teach NLP, Generative AI, LLMs, LangChain, and RAG.
+Students complete a capstone project as the final module.
+Capstone projects include full-stack apps, mobile apps, or cloud-native applications.
+Linkcode’s office is on JM Road, Shivajinagar, Pune.
+The full address is Barve Memorial Complex, 3rd Floor, Opp. Panchali Hotel, JM Road, Pune-411005.
+Linkcode Technologies can be contacted at +91 9604430489 or +91 7057336919.
+The official email for inquiries is hr@linkcode.in
+.
+The “Hire From Us” program highlights that students are industry-ready.
+Linkcode students work on real-world projects during training.
+The institute emphasizes soft skills along with technical excellence.
+Achievements like “Students Trained” and “Highest Package” are shown on the site but are currently placeholders.
+The institute trains students for both development and non-development IT roles.
+The learning environment is designed to simulate real-world industry workflows.
+Linkcode focuses on practical, job-oriented learning rather than theoretical study.
+Student Aachal Parab has contact number 9356584438.
+Student Samiksha More has contact number 9766133658.
+Student Omkar has contact number 7391963060.
+Student Yash has contact number 8483976608.
+Student Prathmesh has contact number 9021693335.
+Student Sagar Deshmukh has contact number 9175075647.
+Student Govind Pawar has contact number 9561424284 and is in batch 34.
+Student Chaitanya Shinde has contact number 9028883580 and is in batch 34.
+Student Aniket Gadhave has contact number 9359518460.
+Student Dhanesh Tari has contact number 8411932593.
+Student Pranav Ingale has contact number 8446800412.
+Student Akshay Dhakane has contact number 9172575939.
+Student Vignesh has contact number 8610319061.
+Student Pratham Patil has contact number 7972824269.
+Student Omkar Patil has contact number 7218819989.
+Student Omkar Mane has contact number 9373722400.
+Student Atharv Kale has contact number 9511685683.
+Student Milind Sarvade has contact number 8623876661.
+Student Yogesh Jagtap has contact number 9075147310.
+Student Atharv Here has contact number 8390245137.
+Student Aniket Mohite has contact number 9168900362.
+Student Jayesh Desai has contact number 9130346006.
+Student Rajesh Joshi has contact number 9359004071.
+Student Raj Atram has contact number 9130946006.
+Student Santosh has contact number 8275654584.
+Student Jyoti Gaikwad has contact number 9764956710.
+Student Sonal has contact number 8329294380.
+Student Akash Satpute has contact number 8956257792.
+Student Shubham Pawar has contact number 7841960633.
+Student Shital has contact number 8652656999.
+Student Pranali Kaisare has contact number 7387657596.
+Student Komal Babar has contact number 7058597244.
+Student Snehal has contact number 7666583319.
+Student Sakshi has contact number 8788709534.
+Aniket’s attendance sheet covers dates from 1-Nov-2025 to 30-Nov-2025.
+Ashwini’s attendance sheet covers dates from 1-Nov-2025 to 30-Nov-2025.
+Jayesh’s attendance sheet covers dates from 1-Nov-2025 to 30-Nov-2025.
+Lokesh’s attendance sheet covers dates from 1-Nov-2025 to 30-Nov-2025.
+Dates in the attendance list include Sundays, which are marked differently.
+Each attendance sheet has multiple columns representing each day of the month.
+Each row in the attendance sheet represents a student’s daily presence or absence.
+The attendance sheets follow the same Google-Sheet-exported HTML format.
+Attendance statuses are represented by single letters such as “P”, “A”, or left blank.
+The headers in all attendance files include 1-Nov-2025 through 30-Nov-2025.
+Linkcode offers Java Full-Stack Development.
+Linkcode offers Python Full-Stack Development.
+Linkcode offers MEAN Stack Development.
+Linkcode offers MERN Stack Development.
+Linkcode offers Android Development.
+Linkcode offers DevOps Development.
+Linkcode offers AWS Cloud Infrastructure.
+Linkcode offers Big Data Hadoop.
+Linkcode offers Blockchain Expert training.
+Linkcode offers DSA (Data Structures & Algorithms).
+Linkcode offers Data Analytics.
+Linkcode offers Data Science.
+Linkcode offers Generative AI (Gen-AI).
+Linkcode offers Digital Marketing.
+Module 1 teaches SDLC and Agile methodologies.
+Module 2 teaches C, C++, Java, and Python programming fundamentals.
+Module 3 covers data structures like arrays, stacks, queues, trees, and graphs.
+Module 3 includes searching and sorting algorithms.
+Module 4 covers Advanced Java and SQL.
+Module 4 includes Python with NumPy and Pandas.
+Module 5 teaches front-end development with HTML, CSS, and JavaScript.
+Module 6 teaches SQL, MySQL, PostgreSQL, MongoDB, and PLSQL.
+Module 7 teaches back-end development with Node.js and Express.
+Module 8 covers mobile development with Flutter, Ionic, or React Native.
+Module 9 includes AWS, Azure, GCP, CI/CD, Docker, and Kubernetes.
+Module 10 teaches Agile, Scrum, Jira, Postman, Git, and GitHub.
+Module 11 introduces AI, NLP, LLMs, LangChain, and RAG.
+Module 12 requires the student to complete a capstone project.
+Each student in the list is associated with their attendance record for November 2025.
+Aniket has a complete attendance sheet documented in Aniket.html.
+Ashwini has a complete attendance sheet documented in Ashwini.html.
+Jayesh has a complete attendance sheet documented in Jayesh.html.
+Lokesh has a complete attendance sheet documented in Lokesh.html.
+The combined dataset links each student to their contact number.
+The combined dataset connects attendance sheets to specific students.
+Each student’s monthly attendance spans 1-Nov-2025 to 30-Nov-2025.
+Students without individualized attendance sheets currently appear only in the master list.
+The combined dataset provides a full mapping of student identity + presence record.

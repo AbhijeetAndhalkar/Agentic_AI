@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+
+{% block title %}Training Courses | LinkCode Technologies{% endblock %}
+
+{% block content %}
+<div class="bg-navy py-20 text-center text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-navy to-primary opacity-50"></div>
+    <div class="relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Training Programs</h1>
+        <p class="text-xl text-blue-200/90 max-w-2xl mx-auto">Industry-oriented courses designed to make you job-ready
+            from day one.</p>
+    </div>
+</div>
+
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Python Full Stack -->
+            <div
+                class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                <div
+                    class="h-56 bg-gradient-to-br from-gray-900 to-gray-800 relative flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
+                    <i class="fab fa-python text-7xl text-yellow-400 drop-shadow-lg"></i>
+                    <span
+                        class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">Best
+                        Seller</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Python
+                        Full Stack</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-2">Master Python, Django framework,
+                        REST APIs, and integrate with modern frontend technologies like React.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Django</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">SQL</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">REST API</span>
+                    </div>
+
+                    <a href="{{ url_for('contact') }}"
+                        class="block w-full text-center py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Enquire Custom Syllabus
+                    </a>
+                </div>
+            </div>
+
+            <!-- Java Full Stack -->
+            <div
+                class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                <div
+                    class="h-56 bg-gradient-to-br from-indigo-900 to-blue-900 relative flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
+                    <i class="fab fa-java text-7xl text-white drop-shadow-lg"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Java
+                        Full Stack</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-2">Comprehensive training on Core
+                        Java, J2EE, Spring Boot, Hibernate, and Microservices architecture.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Spring
+                            Boot</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Hibernate</span>
+                        <span
+                            class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Microservices</span>
+                    </div>
+
+                    <a href="{{ url_for('contact') }}"
+                        class="block w-full text-center py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Enquire Custom Syllabus
+                    </a>
+                </div>
+            </div>
+
+            <!-- MERN Stack -->
+            <div
+                class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                <div
+                    class="h-56 bg-gradient-to-br from-gray-900 to-black relative flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
+                    <div class="flex gap-4 text-5xl">
+                        <i class="fab fa-react text-blue-400"></i>
+                        <i class="fab fa-node text-green-500"></i>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">MERN
+                        Stack</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-2">Become a full-stack expert with
+                        MongoDB, Express.js, React, and Node.js. Build dynamic web apps.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">MongoDB</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">React</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Node</span>
+                    </div>
+
+                    <a href="{{ url_for('contact') }}"
+                        class="block w-full text-center py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Enquire Custom Syllabus
+                    </a>
+                </div>
+            </div>
+
+            <!-- Data Science -->
+            <div
+                class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                <div
+                    class="h-56 bg-gradient-to-br from-purple-900 to-indigo-900 relative flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
+                    <i class="fas fa-brain text-7xl text-purple-300 drop-shadow-lg"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Data
+                        Science & AI</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-2">Dive into Data Analysis, Machine
+                        Learning, Deep Learning, and Artificial Intelligence with Python.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">ML</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Python</span>
+                        <span
+                            class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">TensorFlow</span>
+                    </div>
+
+                    <a href="{{ url_for('contact') }}"
+                        class="block w-full text-center py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Enquire Custom Syllabus
+                    </a>
+                </div>
+            </div>
+
+            <!-- AWS Cloud -->
+            <div
+                class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                <div
+                    class="h-56 bg-gradient-to-br from-orange-800 to-orange-600 relative flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
+                    <i class="fab fa-aws text-7xl text-white drop-shadow-lg"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">AWS
+                        Cloud</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-2">Learn cloud infrastructure,
+                        deployment, security, and scaling using Amazon Web Services.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">EC2</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">S3</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Lambda</span>
+                    </div>
+
+                    <a href="{{ url_for('contact') }}"
+                        class="block w-full text-center py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Enquire Custom Syllabus
+                    </a>
+                </div>
+            </div>
+
+            <!-- DevOps -->
+            <div
+                class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+                <div
+                    class="h-56 bg-gradient-to-br from-blue-700 to-cyan-700 relative flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
+                    <i class="fas fa-infinity text-7xl text-white drop-shadow-lg"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">DevOps
+                        Engineering</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-2">Master the art of CI/CD,
+                        containerization with Docker & Kubernetes, and infrastructure automation.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Docker</span>
+                        <span
+                            class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Kubernetes</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-lg">Jenkins</span>
+                    </div>
+
+                    <a href="{{ url_for('contact') }}"
+                        class="block w-full text-center py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Enquire Custom Syllabus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

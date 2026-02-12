@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkCode Technologies | {% block title %}IT Training & Services{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#001f3f',
+                        primary: '#0056b3',
+                        secondary: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #001f3f;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen font-sans antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-navy text-white text-xs md:text-sm py-2">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3">
+                <a href="mailto:hr@linkcode.in" class="hover:text-blue-300 transition flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> hr@linkcode.in
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="opacity-80 hidden md:inline">Follow Us On :</span>
+                <div class="flex gap-4 text-base">
+                    <a href="#" class="hover:text-blue-400 transition-transform hover:-translate-y-1"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition-transform hover:-translate-y-1"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-green-400 transition-transform hover:-translate-y-1"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/linkcodetechnology/posts/" target="_blank"
+                        class="hover:text-blue-400 transition-transform hover:-translate-y-1"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@rahulahire0708" target="_blank"
+                        class="hover:text-red-400 transition-transform hover:-translate-y-1"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm/50 backdrop-blur-md bg-white/95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <a href="{{ url_for('home') }}" class="flex items-center gap-2 group">
+                    <img src="https://linkcode.in/assets/img/logo.png" alt="LinkCode"
+                        class="h-10 md:h-12 transition-transform group-hover:scale-105"
+                        onerror="this.src='https://via.placeholder.com/150x50?text=LinkCode'">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="{{ url_for('home') }}" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="{{ url_for('about') }}" class="text-gray-600 hover:text-primary transition">About Us</a>
+                    <a href="{{ url_for('training') }}" class="text-gray-600 hover:text-primary transition">Training</a>
+
+                    <!-- Courses Dropdown -->
+                    <div class="relative dropdown group">
+                        <button
+                            class="flex items-center gap-1 text-primary font-semibold group-hover:text-blue-700 py-4">
+                            Courses <i
+                                class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden top-full left-0 w-64 pt-2 z-50">
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-2 border border-gray-100 ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <a href="{{ url_for('training') }}"
+                                    class="block px-4 py-2 hover:bg-blue-50 text-gray-700 transition">Java Full
+                                    Stack</a>
+                                <a href="{{ url_for('training') }}"
+                                    class="block px-4 py-2 hover:bg-blue-50 text-gray-700 transition">Python Full
+                                    Stack</a>
+                                <a href="{{ url_for('training') }}"
+                                    class="block px-4 py-2 hover:bg-blue-50 text-gray-700 transition">MEAN / MERN
+                                    Stack</a>
+                                <a href="{{ url_for('training') }}"
+                                    class="block px-4 py-2 hover:bg-blue-50 text-gray-700 transition">Data Science</a>
+                                <a href="{{ url_for('training') }}"
+                                    class="block px-4 py-2 hover:bg-blue-50 text-gray-700 transition">AWS Cloud</a>
+                                <div class="border-t border-gray-100 my-1"></div>
+                                <a href="{{ url_for('training') }}"
+                                    class="block px-4 py-2 text-primary font-medium hover:bg-blue-50 transition text-center">View
+                                    All Courses</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="{{ url_for('placements') }}"
+                        class="text-gray-600 hover:text-primary transition">Placements</a>
+                    <a href="{{ url_for('contact') }}" class="text-gray-600 hover:text-primary transition">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="{{ url_for('contact') }}"
+                        class="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-500/30 transform hover:-translate-y-0.5 font-medium text-sm">
+                        Book A Demo
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-primary focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg">
+            <div class="flex flex-col p-4 space-y-4 font-medium">
+                <a href="{{ url_for('home') }}" class="text-gray-600 hover:text-primary">Home</a>
+                <a href="{{ url_for('about') }}" class="text-gray-600 hover:text-primary">About Us</a>
+                <a href="{{ url_for('training') }}" class="text-gray-600 hover:text-primary">Training</a>
+                <a href="{{ url_for('placements') }}" class="text-gray-600 hover:text-primary">Placements</a>
+                <a href="{{ url_for('contact') }}" class="text-gray-600 hover:text-primary">Contact</a>
+                <a href="{{ url_for('contact') }}"
+                    class="bg-primary text-white px-6 py-3 rounded-lg text-center shadow-md">
+                    Book A Demo
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-20 pb-10 text-sm border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- About -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <img src="https://linkcode.in/assets/img/logo.png" alt="LinkCode"
+                            class="h-10 brightness-0 invert opacity-90">
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Pune's premier IT training institute. We bridge the gap between academic learning and industry
+                        requirements with practical, hands-on training.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Quick Links
+                    </h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="{{ url_for('about') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> About Us</a></li>
+                        <li><a href="{{ url_for('training') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> Training</a></li>
+                        <li><a href="{{ url_for('placements') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> Placements</a></li>
+                        <li><a href="{{ url_for('contact') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Top Courses
+                    </h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="{{ url_for('training') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> Java Full Stack</a></li>
+                        <li><a href="{{ url_for('training') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> Python Full Stack</a></li>
+                        <li><a href="{{ url_for('training') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> MERN Stack</a></li>
+                        <li><a href="{{ url_for('training') }}"
+                                class="hover:text-primary transition flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-xs"></i> Data Science</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Contact
+                    </h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex gap-4 items-start">
+                            <div
+                                class="mt-1 w-8 h-8 rounded bg-white/5 flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i></div>
+                            <span class="text-sm">Office No.12, 3rd Floor, Barve Memorial Complex, JM Road, Pune,
+                                411005.</span>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <div
+                                class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <p class="hover:text-white cursor-pointer">+91 9604430489</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <div
+                                class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-envelope"></i></div>
+                            <p class="hover:text-white cursor-pointer">hr@linkcode.in</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500">
+                <p>Copyright © 2026 LinkCode Technologies. All rights reserved.</p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="chat-toggle-btn"
+            class="group w-14 h-14 bg-primary rounded-full shadow-lg shadow-blue-600/30 flex items-center justify-center text-white hover:bg-navy transition-all hover:scale-110 active:scale-95 duration-300">
+            <span
+                class="absolute w-full h-full bg-primary rounded-full animate-ping opacity-20 pointer-events-none group-hover:hidden"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat-window"
+        class="fixed bottom-24 right-6 w-[90vw] md:w-[380px] h-[550px] chat-widget chat-closed flex flex-col z-50 rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+        <!-- Header -->
+        <div class="chat-header bg-navy text-white p-4 flex justify-between items-center border-b border-blue-900/30">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white font-bold backdrop-blur-sm shadow-inner">
+                    <i class="fas fa-robot text-lg"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-base tracking-wide">LinkCode AI</h3>
+                    <div class="flex items-center gap-1.5 opacity-80">
+                        <span class="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.5)]"></span>
+                        <span class="text-xs">Online Assistant</span>
+                    </div>
+                </div>
+            </div>
+            <button id="close-chat"
+                class="w-8 h-8 rounded-full hover:bg-white/10 flex items-center justify-center transition">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Messages Area -->
+        <div id="messages-container" class="flex-1 p-5 overflow-y-auto bg-gray-50 space-y-4">
+            <div class="flex justify-start w-full">
+                <div
+                    class="bg-white border border-gray-100 text-gray-700 px-4 py-3 rounded-2xl rounded-tl-none shadow-sm text-sm max-w-[85%]">
+                    Hello! 👋 Welcome to LinkCode Technologies. How can I assist you with our courses or placements
+                    today?
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="p-4 bg-white border-t border-gray-100 flex items-center gap-2">
+            <div class="flex-grow relative">
+                <input type="text" id="user-input" placeholder="Type your message..."
+                    class="w-full bg-gray-50 border border-gray-200 rounded-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition text-sm text-gray-700 placeholder-gray-400">
+            </div>
+            <button id="send-btn"
+                class="w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:bg-navy hover:shadow-lg transition-all transform active:scale-95">
+                <i class="fas fa-paper-plane text-sm translate-x-px translate-y-px"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

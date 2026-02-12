@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us | LinkCode Technologies{% endblock %}
+
+{% block content %}
+<div class="bg-blue-900 py-16 text-center text-white">
+    <h1 class="text-4xl font-bold">About Us</h1>
+    <p class="mt-2 text-blue-200">Building Careers, Shaping Futures.</p>
+</div>
+
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    LinkCode Technologies is a premier IT training and software development company based in Pune. We
+                    specialize in bridging the gap between academic learning and industry requirements. Our mission is
+                    to empower students and professionals with the skills needed to thrive in the ever-evolving tech
+                    landscape.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    With a team of experienced mentors and a curriculum designed by industry experts, we offer
+                    comprehensive training in Full Stack Development, Data Science, Cloud Computing, and more.
+                </p>
+                <div class="grid grid-cols-2 gap-6 mt-8">
+                    <div>
+                        <h4 class="font-bold text-gray-900">Our Vision</h4>
+                        <p class="text-sm text-gray-500 mt-1">To be the most trusted partner for IT training and
+                            placement.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Our Mission</h4>
+                        <p class="text-sm text-gray-500 mt-1">To deliver quality education and create employability for
+                            all.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Team" class="rounded-lg shadow-xl">
+                <div
+                    class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
+                    <p class="font-bold text-xl">10+ Years</p>
+                    <p class="text-sm opacity-80">of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

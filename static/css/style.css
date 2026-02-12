@@ -1,0 +1,125 @@
+/* LinkCode Technologies Theme - Corporate Blue */
+:root {
+    --primary-blue: #0056b3;
+    /* Corporate Blue */
+    --dark-navy: #001f3f;
+    /* Navbar/Footer Color */
+    --accent-blue: #3b82f6;
+    /* Lighter blue for hover/accents */
+    --bg-light: #f8f9fa;
+    --text-primary: #333333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+}
+
+/* Chat Widget Container */
+.chat-widget {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    background: var(--bg-light);
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.chat-open {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.chat-closed {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Header */
+.chat-header {
+    background: var(--dark-navy);
+    /* Match Top Bar */
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    border-bottom: 2px solid #004080;
+}
+
+.chat-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Messages Area */
+.messages-area {
+    background: #ffffff;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 20px 20px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* Message Bubbles */
+.message-bubble {
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 85%;
+    position: relative;
+}
+
+.user-message {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-bottom-right-radius: 2px;
+    margin-left: auto;
+    box-shadow: 0 2px 4px rgba(0, 86, 179, 0.2);
+}
+
+.bot-message {
+    background: #f1f5f9;
+    color: var(--text-primary);
+    border-bottom-left-radius: 2px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Input Area */
+.input-area {
+    background: var(--white);
+    padding: 15px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-input {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 24px;
+    padding: 10px 16px;
+    width: 100%;
+    outline: none;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    transition: all 0.2s;
+}
+
+.chat-input:focus {
+    background: #ffffff;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+/* Bot Avatar in Header */
+.header-avatar {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

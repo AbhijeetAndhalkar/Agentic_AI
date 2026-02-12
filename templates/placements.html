@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Placements | LinkCode Technologies{% endblock %}
+
+{% block content %}
+<div class="bg-blue-900 py-16 text-center text-white">
+    <h1 class="text-4xl font-bold">Placements</h1>
+    <p class="mt-2 text-blue-200">Our students work at top MNCs.</p>
+</div>
+
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Success Stories</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-quote-left"></i></div>
+                <p class="text-gray-600 mb-6 italic">"LinkCode provided me with the best platform to learn Full Stack
+                    Development. The trainers are highly experienced and the placement support is exceptional."</p>
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blue-200 flex items-center justify-center text-blue-600 font-bold">
+                        RS</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Rahul Sharma</h4>
+                        <p class="text-sm text-blue-600 font-medium">Software Engineer @ TCS</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-quote-left"></i></div>
+                <p class="text-gray-600 mb-6 italic">"The Data Science course curriculum is very comprehensive. Working
+                    on live projects gave me the confidence to crack interviews."</p>
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center text-pink-600 font-bold">
+                        PP</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Priya Patel</h4>
+                        <p class="text-sm text-blue-600 font-medium">Data Analyst @ Accenture</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-quote-left"></i></div>
+                <p class="text-gray-600 mb-6 italic">"Excellent training institute. They start from basics and cover
+                    advanced topics. Very helpful for non-IT students."</p>
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-full bg-green-200 flex items-center justify-center text-green-600 font-bold">
+                        AV</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Amit Verma</h4>
+                        <p class="text-sm text-blue-600 font-medium">Java Developer @ Infosys</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

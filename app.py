@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 from groq import Groq
 import smtplib
 from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+from email.mime.multipart import MIMEMultipart  
 
 # Load environment variables
 load_dotenv()

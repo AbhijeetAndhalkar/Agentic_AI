@@ -5,7 +5,7 @@
 2.  **API Keys**: You need API keys for:
     *   **Groq** (LLM inference)
     *   **Pinecone** (Vector Database)
-    *   **Gmail App Password** (For sending emails)
+
 
 ## Installation
 
